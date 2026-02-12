@@ -97,7 +97,12 @@ document.addEventListener('DOMContentLoaded',function(){
             .catch(()=>{ success.hidden = false; contactForm.reset(); });
         });
       } else {
-        success.hidden = false; contactForm.reset();
+        // Open Gmail/email client with pre-filled message
+        const subject = encodeURIComponent('Message from ' + data.name);
+        const body = encodeURIComponent('From: ' + data.name + '\nEmail: ' + data.email + '\n\nMessage:\n' + data.message);
+        window.location.href = 'mailto:info@kericho.go.ke?subject=' + subject + '&body=' + body;
+        success.hidden = false; 
+        contactForm.reset();
       }
     });
   }
