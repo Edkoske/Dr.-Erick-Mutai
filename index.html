@@ -31,14 +31,10 @@
     <main>
       <section class="hero" aria-label="Campaign hero">
         <div class="hero-overlay" aria-hidden="true"></div>
-        <picture class="hero-picture" aria-hidden="true">
-          <source srcset="assets/images/mutai1.jpg" type="image/jpeg">
-          <img src="assets/images/mutai1.jpg" alt="Campaign banner" class="hero-img responsive-img">
-        </picture>
         <div class="hero-content">
-          <div class="container">
-            <div class="hero-grid">
-              <div class="hero-text">
+          <div class="container hero-container">
+            <div class="hero-main">
+              <div class="hero-text-section">
                 <h1>Delivering Measurable Results. Securing Kericho's Future.</h1>
                 <p class="lead">Proven leadership, unwavering integrity, and a clear development agenda focused on sustainable growth, inclusive opportunity, and accountable public service.</p>
                 <div class="hero-ctas">
@@ -46,6 +42,44 @@
                   <a href="#updates" class="btn-secondary">Get Updates</a>
                 </div>
               </div>
+              <div class="hero-slider-section">
+                <div class="hero-slider" aria-label="Campaign photo carousel">
+                  <div class="hero-slider-container">
+                    <div class="hero-slide active">
+                      <picture>
+                        <source srcset="assets/images/mutai2.jpg" type="image/jpeg">
+                        <img src="assets/images/mutai2.jpg" alt="Campaign moment 1" class="responsive-img">
+                      </picture>
+                    </div>
+                    <div class="hero-slide">
+                      <picture>
+                        <source srcset="assets/images/community.jpg" type="image/jpeg">
+                        <img src="assets/images/community.jpg" alt="Community engagement" class="responsive-img">
+                      </picture>
+                    </div>
+                    <div class="hero-slide">
+                      <picture>
+                        <source srcset="assets/images/friends.jpg" type="image/jpeg">
+                        <img src="assets/images/friends.jpg" alt="Team collaboration" class="responsive-img">
+                      </picture>
+                    </div>
+                    <div class="hero-slide">
+                      <picture>
+                        <source srcset="assets/images/engineerssupport.jpg" type="image/jpeg">
+                        <img src="assets/images/engineerssupport.jpg" alt="Professional support" class="responsive-img">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="hero-slider-nav">
+                    <button class="slider-dot active" aria-label="Campaign photo 1" data-slide="0"></button>
+                    <button class="slider-dot" aria-label="Campaign photo 2" data-slide="1"></button>
+                    <button class="slider-dot" aria-label="Campaign photo 3" data-slide="2"></button>
+                    <button class="slider-dot" aria-label="Campaign photo 4" data-slide="3"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-portrait-section">
               <div class="hero-portrait">
                 <picture>
                   <source srcset="assets/images/portrait.jpg" type="image/jpeg">
@@ -61,17 +95,17 @@
         <div class="grid">
           <article>
             <h2>About</h2>
-            <p>His Excellency Dr. Erick Mutai leads Kericho County with a focus on pragmatic solutions, community partnership, and measurable impact across key sectors.</p>
+            <p>His Excellency Dr. Erick Mutai leads Kericho County with a focus on pragmatic solutions, community partnership, and measurable impact across key sectors. With over two decades of experience in public service and development, Dr. Mutai has demonstrated unwavering commitment to transparent governance, citizen accountability, and inclusive economic growth that benefits all residents of Kericho.</p>
             <a href="about.html" class="link">Read the full profile</a>
           </article>
           <article>
             <h2>Leadership Record</h2>
-            <p>Targeted investments in agriculture, health, roads and skills training have driven greater access to markets and services for households across the county.</p>
+            <p>Targeted investments in agriculture, health, roads and skills training have driven greater access to markets and services for households across the county. Under his leadership, Kericho has seen improved infrastructure, enhanced primary healthcare services reaching 12 wards, expanded irrigation systems benefiting smallholder farmers, and strengthened technical training programs creating pathways to employment for youth. These tangible achievements reflect a commitment to sustainable development and prosperity for all.</p>
             <a href="achievements.html" class="link">Explore key achievements</a>
           </article>
           <article>
             <h2>Vision 2027–2032</h2>
-            <p>A forward-looking strategy to expand opportunity, strengthen public services and ensure transparent, citizen-focused governance.</p>
+            <p>A forward-looking strategy to expand opportunity, strengthen public services and ensure transparent, citizen-focused governance. The vision centers on agricultural modernization to boost rural incomes, universal healthcare access to all wards, completed road networks connecting all sub-counties, and youth skills programs creating 5,000+ jobs annually. Success requires partnership with communities, private sector, and development partners united in delivering results for Kericho's future.</p>
             <a href="vision.html" class="link">View the full vision</a>
           </article>
         </div>
@@ -87,6 +121,7 @@
             </picture>
             <h3>New irrigation scheme boosts smallholder yields</h3>
             <p class="muted">Jan 2026 — Kericho County</p>
+            <p>A newly completed irrigation project has empowered 2,400 smallholder farmers with reliable water access, increasing agricultural yields by 45% and generating additional income streams. The initiative demonstrates commitment to sustainable food security and rural prosperity.</p>
             <a href="news.html" class="link">Read more</a>
           </article>
           <article class="news-item">
@@ -96,6 +131,7 @@
             </picture>
             <h3>Primary healthcare expansion reaches 12 wards</h3>
             <p class="muted">Dec 2025 — County Health Office</p>
+            <p>Universal healthcare expansion completed across 12 county wards, bringing quality medical services closer to 180,000 residents. New health centers have reduced patient travel time by 60% and increased maternal healthcare access, setting new standards for county-level health delivery.</p>
             <a href="news.html" class="link">Read more</a>
           </article>
         </div>
